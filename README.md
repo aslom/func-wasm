@@ -1,4 +1,8 @@
-# func-wasm
+# Template to run Wasm WASI WAGI with Knative func
+
+
+Context:
+https://github.com/knative/func/discussions/1551#discussioncomment-5220469
 
 # If you are going to use your own build packs
 
@@ -8,19 +12,25 @@ Use your own docker prefix and rebuiild https://github.com/aslom/knative-wasm-bu
 
 Modify files inside to use Docker prefix
 
-# Add yoour Docker prefix to trusted builders to allow func build to work
+# Add Docker prefix to trusted builders to allow func build to work
 
 For details and context see:
 https://github.com/knative/func/discussions/1551#discussioncomment-5220469
 
-Buuild your won func
+Issue explaining it:
+https://github.com/knative/func/issues/1599
+
+Clone knative/func and modify ` pkg/builders/buildpacks/builder.go` to add "docker.io/aslom/" to trusted builders prefixes.
+
+
+Build your own func
 
 ```
 cd knative/func
 make
 ```
 
-# Run smaple code
+# Run sample code
 
 ```
 func repositories add wasm https://github.com/aslom/func-wasm
