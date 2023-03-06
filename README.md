@@ -1,5 +1,13 @@
 # func-wasm
 
+# If you are going to use your won build packs
+
+Change everything from docker.io/aslom to your Docker prefix
+
+Use your own docker prefix and rebuiild https://github.com/aslom/knative-wasm-buildpacks
+
+Modify files inside to use Docker prefix
+
 # Add yoour Docker prefix to trusted builders to allow func build to work
 
 For details and context see:
