@@ -1,6 +1,6 @@
 # func-wasm
 
-# If you are going to use your won build packs
+# If you are going to use your own build packs
 
 Change everything from docker.io/aslom to your Docker prefix
 
@@ -20,12 +20,19 @@ cd knative/func
 make
 ```
 
-###
+# Run smaple code
 
 ```
 func repositories add wasm https://github.com/aslom/func-wasm
 mkdir wt1 && cd $_
 func create -l tinygo -t wasm/http-wagi
+```
+
+Edit main.go
+
+Build:
+
+```
 $YOUR_VERSION_OF_KNATIVE_FUNC/func build -r docker.io/aslom
 ```
 
