@@ -1,0 +1,9 @@
+default_host = "localhost:8000"
+
+[[module]]
+# Example executing a Web Assembly Text file
+route = "/"
+module = "/layers/aslom_tinygo-wasi-wagi/wagi/main.wasm"
+
+
+
