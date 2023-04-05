@@ -8,7 +8,7 @@ import (
 func main() {
 	fmt.Println("Content-Type: text/plain")
 	fmt.Println("")
-	fmt.Println("Hello, World Mar 7b in TinyGo world!")
+	fmt.Println("Hello TinyGo in Wasm World!")
 
 	printenv()
 }
