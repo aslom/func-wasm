@@ -6,7 +6,7 @@ https://github.com/knative/func/discussions/1551#discussioncomment-5220469
 
 # Prerequisites
 
-Install (Knative func)[https://knative.dev/docs/functions/install-func/], make sure it is at least version 1.9.1
+Install [Knative functions](https://knative.dev/docs/functions/install-func/), make sure it is at least version 1.9.1
 
 ```
 func version​
