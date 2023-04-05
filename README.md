@@ -29,20 +29,27 @@ func create -l tinygo -t wasm/http-wagi
 
 Edit main.go file.
 
+Deploy
+
+```
+func deploy -v --registry docker.io/aslom
+```
+
+# Local testing
+
 Build:
 
 ```
 func build -r docker.io/aslom
 ```
 
-Quick test localhost:8080/
+Start the code:
 
 ```
 docker run --rm -p 8080:8080 --entrypoint web docker.io/aslom/wt1:latest
 ```
 
-Deploy
+Quick test in web browser by opening http://localhost:8080/
 
-```
-func deploy -v --registry docker.io/aslom
-```
+
+
