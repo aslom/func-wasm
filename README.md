@@ -2,7 +2,7 @@
 
 
 Context:
-https://github.com/knative/func/discussions/1551#discussioncomment-5220469
+https://github.com/knative/func/discussions/1551
 
 # Prerequisites
 
@@ -22,7 +22,8 @@ func repositories add wasm https://github.com/aslom/func-wasm
 # Run sample code
 
 ```
-mkdir wt1 && cd $_
+mkdir wt1 
+cd wt1
 func create -l tinygo -t wasm/http-wagi
 ```
 
