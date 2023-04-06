@@ -1,8 +1,6 @@
-# Template to run Wasm WASI WAGI with Knative func
+# Template to run Wasm WASI WAGI with Knative functions
 
 
-Context:
-https://github.com/knative/func/discussions/1551
 
 # Prerequisites
 
@@ -51,5 +49,8 @@ docker run --rm -p 8080:8080 --entrypoint web docker.io/aslom/wt1:latest
 
 Quick test in web browser by opening http://localhost:8080/
 
+# Context:
+
+https://github.com/knative/func/discussions/1551
 
 
