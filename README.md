@@ -11,13 +11,13 @@ func version​
 v1.9.1​
 ```
 
-# Install Wasm func repository
+# Add Wasm func repository
 
 ```
 func repositories add wasm https://github.com/aslom/func-wasm
 ```
 
-# Run sample code
+# Create and run sample code
 
 ```
 mkdir wt1 
